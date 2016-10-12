@@ -6,6 +6,16 @@ div.navbar > ul {
     background-color: black;
 }
 
+div.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+div.content {
+	padding-top: 20px;
+}
+
 div.navbar > ul > li {
     float: left;
 }
