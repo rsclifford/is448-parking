@@ -1,6 +1,4 @@
-
-
-ul {
+div.navbar > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,11 +6,11 @@ ul {
     background-color: black;
 }
 
-li {
+div.navbar > ul > li {
     float: left;
 }
 
-li a {
+div.navbar > ul > li > a {
     display: block;
     color: white;
     text-align: center;
@@ -20,6 +18,19 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+div.navbar > ul > li > a:hover {
     background-color: #111;
+}
+
+i.mobile {
+	display: none;
+}
+
+@media all and (max-width: 480px) {
+	div.navbar > ul > li {
+		display: none;
+	}
+	.mobile {
+		display: block !important;
+	}
 }
